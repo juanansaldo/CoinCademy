@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/style.css') }}">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <title>Info</title>
+        <style></style>
+
+        {{ bootstrap.load_css() }}
+    </head>
+    <body>
+        {% include "partials/header.html" %}
+
+        <h2 id="title"><b>WHAT IS CRYPTOCURRENCY?</b></h2>
+        
+        <div class="div1">
+            <div class="x2">
+                <h5 id="title"><b>BASIC INFORMATION</b></h5>
+                <p>Cryptocurrency, sometimes called crypto, is any form of currency that exists digitally
+                or virtually and uses cryptography to secure transactions. Cryptocurrencies don't have
+                a central issuing or regulating authority, instead using a decentralized system to
+                record transactions and issue new units. (<a href="https://usa.kaspersky.com/resource-center/definitions/what-is-cryptocurrency">source</a>)</p>
+            </div>
+
+            <div class="x2">
+                <h5 id="title"><b>FACTS ABOUT CRYPTOCURRENCIES</b></h5>
+            
+                <ul>
+                    <li> There are over 18,000 different crytocurrencies.</li>
+                    <li> Dogecoin was started as a joke.</li>
+                    <li> The real identities of some of the creators of cryptocurrencies still seem to be unknown.</li>
+                </ul>
+                
+                <h6> For more interesting facts, read this article from <a href = "https://guardian.ng/technology/10-facts-about-cryptocurrency-you-should-know/">The Guardian</a>. </h6>
+            </div>
+        </div>
+       
+        {% include "partials/footer.html" %}
+                
+        {{ bootstrap.load_js() }}
+        
+        <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+            
+    </body>
+</html>
