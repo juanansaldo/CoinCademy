@@ -4,10 +4,10 @@
 # Date       : 17 May 2023
 # Abstract   : This program creates a flask application that uses the
 #              coingecko api to display cryptocurrency information.
-# Work contr : Juan worked on all templates, final.py, css, and javascript.
+# Work contr : Juan worked on all templates, final.py, css, & javascript.
 #              Ricardo worked on all templates and final.py.
 #              Amancio worked on chart template and final.py.
-#              Cory worked on info template, partials, nav bar, and final.py.
+#              Cory worked on info template, partials, nav bar, & final.py.
 # Github link: https://github.com/juanansaldo/team7558
 
 from flask import Flask, render_template
