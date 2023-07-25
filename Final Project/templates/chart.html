@@ -9,6 +9,68 @@
 
         {{ bootstrap.load_css() }}
     </head>
+<<<<<<< HEAD
+
+    <body>
+        {% include "partials/header.html" %}
+
+        <h2 id="title"><b>{{ name }} CHART (24h)</b></h2>
+
+        <div class=div1>
+            <div class="text-center x1">
+                <img src="/static/images/{{ id }}_chart.png" alt="Chart">
+            </div>
+
+            <div class="details">
+                <div>
+                    <div class="x">
+                        Price <br>
+                        {{ price }}
+                    </div>
+                    <div class="x">
+                        Change <br>
+                        {{ dayChange }}%
+                    </div>
+                    <div class="x">
+                        Low (24h) <br>
+                        {{ low }}
+                    </div>
+                    <div class="x">
+                        Week change <br>
+                        {{ weekChange }}%
+                    </div>
+                    <div class="x">
+                        Circulating supply <br>
+                        {{ circSupply }}
+                    </div>
+                </div>
+                <div>
+                    <div class="x">
+                        Market cap <br>
+                        ${{ marketcap }}
+                    </div>
+                    <div class="x">
+                        Volume (24h) <br>
+                        ${{ dayVolume }}
+                    </div>
+                    <div class="x">
+                        High (24h) <br>
+                        {{ high }}
+                    </div>
+                    <div class="x">
+                        Year change <br>
+                        {{ yearChange }}%
+                    </div>
+                    <div class="x">
+                        Total supply <br>
+                        {{ totalSupply }}
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        {% include "partials/footer.html" %}
+=======
     <body>
         {% include "partials/header.html" %}
 
@@ -32,10 +94,14 @@
                 </div>
             </div>
         </footer>
+>>>>>>> 48185bf9eb83582ee7b179d94ba776d65863bb4d
 
         {{ bootstrap.load_js() }}
 
         <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+<<<<<<< HEAD
+=======
 
+>>>>>>> 48185bf9eb83582ee7b179d94ba776d65863bb4d
     </body>
 </html>
